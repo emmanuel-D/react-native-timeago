@@ -1,17 +1,21 @@
 {
-  "name": "react-native-timeago",
-  "version": "0.5.0",
+  "name": "@manu_omg/react-native-timeago",
+  "version": "0.0.2",
   "description": "Auto-updating timeago component for React Native",
   "main": "TimeAgo.js",
   "typings": "./index.d.ts",
   "scripts": {
+    "publish": "npm publish --access public",
     "test": "jest --verbose"
   },
   "keywords": [
     "react-native",
     "timeago",
     "react-component",
-    "react-native-component"
+    "react-native-component",
+    "@manu_omg/react-native-timeago",
+    "@manu_omg",
+    "manu_omg"
   ],
   "jest": {
     "preset": "jest-react-native",
@@ -20,14 +24,14 @@
     ]
   },
   "peerDependencies": {
-    "moment": "^2.19.1",
-    "react": "^16.0.0",
+    "dayjs": "^1.11.7",
+    "react": "^18.2.0",
     "react-native": "*"
   },
-  "author": "Tyler Hughes <iampbt@gmail.com>",
+  "author": "Emmanuel Dadem <emmadadem@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/TylerLH/react-native-timeago"
+    "url": "https://github.com/emmanuel-D/react-native-timeago"
   },
   "license": "ISC",
   "devDependencies": {
@@ -38,11 +42,11 @@
     "jest-cli": "^24.9.0",
     "jest-react-native": "^18.0.0",
     "metro-react-native-babel-preset": "^0.57.0",
-    "moment": "^2.19.1",
-    "prop-types": "^15.6.0",
-    "react": "^16.0.0",
-    "react-native": "^0.61.4",
-    "react-test-renderer": "^16.0.0",
-    "regenerator-runtime": "^0.13.3"
+    "dayjs": "^1.11.7",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-native": "^0.71.7",
+    "react-test-renderer": "^18.2.0",
+    "regenerator-runtime": "^0.13.11"
   }
 }

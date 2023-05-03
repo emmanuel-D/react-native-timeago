@@ -1,12 +1,12 @@
 import React from 'react'
 import { Text } from 'react-native'
 import TestRenderer from 'react-test-renderer'
-import moment from 'moment'
+import dayjs from 'dayjs'
 import TimeAgo from '../TimeAgo'
 
 describe('TimeAgo', () => {
   test('Renders', () => {
-    const timestamp = moment().subtract(10, 'days')
+    const timestamp = dayjs().subtract(10, 'days')
     const renderer = TestRenderer.create(
       <TimeAgo time={timestamp} />
     )

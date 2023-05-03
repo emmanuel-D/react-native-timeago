@@ -1,7 +1,9 @@
 // @flow
 import React, { Component } from "react";
-import { View, Text } from "react-native";
-import moment from "moment";
+import { Text } from "react-native";
+import dayjs from 'dayjs'
+import relativeTime from 'dayjs/plugin/relativeTime'
+dayjs.extend(relativeTime)
 
 export default class TimeAgo extends Component {
   props: {
@@ -41,7 +43,7 @@ export default class TimeAgo extends Component {
     const { time, hideAgo } = this.props;
     return (
       <Text {...this.props}>
-        {moment(time).fromNow(hideAgo)}
+        {dayjs(time).fromNow(hideAgo)}
       </Text>
     );
   }
